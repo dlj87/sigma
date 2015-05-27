@@ -1,0 +1,46 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Flexmojos Simple Example 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ flexmojos-simplist ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ flexmojos-simplist ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /root/1-Simple-2/src/main/resources
+[INFO] 
+[INFO] --- flexmojos-maven-plugin:4.0-RC2:compile-swf (default-compile-swf) @ flexmojos-simplist ---
+[INFO] Flexmojos 4.0-RC2
+[INFO] 	 Apache License - Version 2.0 (NO WARRANTY) - See COPYRIGHT file
+[INFO] Updating Flash Player Trust directory /root/1-Simple-2/target
+[WARNING] No themes are explicitly defined in the <theme> section or in any scope="theme" dependencies. Flexmojos is now attempting to figure out which themes to include. (to avoid this warning you should explicitly state your theme dependencies)
+[WARNING] Adding spark.css theme because spark.swc was included as a dependency
+[INFO] Writing configuration dump to /root/1-Simple-2/target/flexmojos-simplist-1.0.0-SNAPSHOT-configs.xml
+[INFO] /root/1-Simple-2/target/flexmojos-simplist-1.0.0-SNAPSHOT.swf (609982 bytes)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ flexmojos-simplist ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /root/1-Simple-2/src/test/resources
+[INFO] 
+[INFO] --- flexmojos-maven-plugin:4.0-RC2:test-compile (default-test-compile) @ flexmojos-simplist ---
+[INFO] Flexmojos 4.0-RC2
+[INFO] 	 Apache License - Version 2.0 (NO WARRANTY) - See COPYRIGHT file
+[WARNING] Skipping compiler, test source path doesn't exist.
+[INFO] 
+[INFO] --- flexmojos-maven-plugin:4.0-RC2:test-run (default-test-run) @ flexmojos-simplist ---
+[INFO] Flexmojos 4.0-RC2
+[INFO] 	 Apache License - Version 2.0 (NO WARRANTY) - See COPYRIGHT file
+[WARNING] Skipping test run. Runner not found: /root/1-Simple-2/target/test-classes
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ flexmojos-simplist ---
+[INFO] Installing /root/1-Simple-2/target/flexmojos-simplist-1.0.0-SNAPSHOT.swf to /root/.m2/repository/org/justinjmoses/flexmojos-introduction/flexmojos-simplist/1.0.0-SNAPSHOT/flexmojos-simplist-1.0.0-SNAPSHOT.swf
+[INFO] Installing /root/1-Simple-2/pom.xml to /root/.m2/repository/org/justinjmoses/flexmojos-introduction/flexmojos-simplist/1.0.0-SNAPSHOT/flexmojos-simplist-1.0.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.613 s
+[INFO] Finished at: 2015-05-25T20:11:59+03:00
+[INFO] Final Memory: 17M/212M
+[INFO] ------------------------------------------------------------------------
+

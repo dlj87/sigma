@@ -1,0 +1,8 @@
+Build steps:
+1) Read maven manuals
+2) Create ~/.m2/settings.xml
+3) Insert settings xml template content in settings.xml
+4) Move pom.xml repositories and plugin repositories sections to the settings.xml according to the syntax rules.
+5) cd into project directory and run "mvn clean install"
+6) Correct a typo in settings.xml and run build again.
+7) Build successfull

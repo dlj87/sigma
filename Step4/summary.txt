@@ -1,0 +1,22 @@
+1) Create 7-Profiles maven job in Jenkins
+2) Build and failure (Missing dependency)
+3) Build with command line (failure)
+4) Install missing dependancy locally with mvn install:install-file -Dfile=as3-signals-0.8.swc -DgroupId=org.osflash -DartifactId=as3-signals -Dversion=0.8 -Dpackaging=swc
+5) Build with command line (failure, missing flash player, xvfb-run)
+6) Install Xvfb
+7) Install Apache-flex-sdk
+8) Install flashplayer standalone
+9) Install missing i686 libs for centos x86_64
+10) Create a new test evironment based on Centos6 i386 Desktop
+11) Build in command line, success
+12) Create 7-Profiles maven job in Jenkins
+13) Add pre-build steps: 
+cd $WORKSPACE/7-Profiles/libs/
+mvn install:install-file -Dfile=as3-signals-0.8.swc -DgroupId=org.osflash -DartifactId=as3-signals -Dversion=0.8 -Dpackaging=swc
+14) Build failed (flashplayer not found)
+15) Install Envinject plugin for Jenkins
+16) Insert path to the flashplayer as env variable in 7-Profiles project
+17) Install Xvfb
+18) Build success
+19) Add "clean install -P flex4.1" as a goal
+20) Build success

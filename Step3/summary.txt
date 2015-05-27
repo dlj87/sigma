@@ -1,0 +1,6 @@
+Configuration / build steps:
+1) Set path to maven and git in jenkins settings
+2) Install Git Plugin, Github API Plugin, Git Client Plugin, Ginhub plugin for Jenkins
+3) Restart Jenkins to apply plugins
+4) Create 1-Simple maven job in Jenkins
+5) Build Success

@@ -1,0 +1,13 @@
+Build steps:
+1) Download testClient sources
+2) Copy pom.xml from step2 to the testClient directory
+3) Change path to the application in pom.xml
+3) Build, failure (halo theme issue)
+4) Fix parameter in testClient.mxml
+5) Build Successfull
+6) Add generate wrapper execution to the pom.xml
+7) Build Successfull, index.html has been generated
+8) Create a test jenkins maven project
+9) Run test build for workspace creation
+10) Copy source files to the workspace
+11) Build successfull

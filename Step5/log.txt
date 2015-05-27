@@ -1,0 +1,67 @@
+Started by user anonymous
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/lib/jenkins/jobs/task-5/workspace
+Parsing POMs
+Discovered a new module org.justinjmoses.flexmojos-introduction:testClient testClient
+Modules changed, recalculating dependency graph
+[testClient] $ /usr/java/jdk1.7.0_79/bin/java -cp /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven32-agent-1.6.jar:/opt/maven/boot/plexus-classworlds-2.5.2.jar:/opt/maven/conf/logging jenkins.maven3.agent.Maven32Main /opt/maven/ /var/cache/jenkins/war/WEB-INF/lib/remoting-2.51.jar /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven32-interceptor-1.6.jar /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.6.jar 43624
+<===[JENKINS REMOTING CAPACITY]===>channel started
+Executing Maven:  -B -f /var/lib/jenkins/jobs/task-5/workspace/testClient/pom.xml install
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building testClient 1.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- flexmojos-maven-plugin:4.0-RC2:wrapper (wrapper) @ testClient ---
+[INFO] Flexmojos 4.0-RC2
+[INFO] 	 Apache License - Version 2.0 (NO WARRANTY) - See COPYRIGHT file
+[INFO] flexmojos 4.0-RC2 - GNU GPL License (NO WARRANTY) - See COPYRIGHT file
+[INFO] Extracting template
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ testClient ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/jobs/task-5/workspace/testClient/src/main/resources
+[INFO] 
+[INFO] --- flexmojos-maven-plugin:4.0-RC2:copy-flex-resources (default) @ testClient ---
+[INFO] Flexmojos 4.0-RC2
+[INFO] 	 Apache License - Version 2.0 (NO WARRANTY) - See COPYRIGHT file
+[WARNING] 'copy-flex-resources' was intended to run on war project
+[INFO] 
+[INFO] --- flexmojos-maven-plugin:4.0-RC2:compile-swf (default-compile-swf) @ testClient ---
+[INFO] Flexmojos 4.0-RC2
+[INFO] 	 Apache License - Version 2.0 (NO WARRANTY) - See COPYRIGHT file
+[WARNING] No themes are explicitly defined in the <theme> section or in any scope="theme" dependencies. Flexmojos is now attempting to figure out which themes to include. (to avoid this warning you should explicitly state your theme dependencies)
+[WARNING] Adding spark.css theme because spark.swc was included as a dependency
+[INFO] Writing configuration dump to /var/lib/jenkins/jobs/task-5/workspace/testClient/target/testClient-1.0.0-configs.xml
+[INFO] /var/lib/jenkins/jobs/task-5/workspace/testClient/target/testClient-1.0.0.swf (704356 bytes)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ testClient ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/jobs/task-5/workspace/testClient/src/test/resources
+[INFO] 
+[INFO] --- flexmojos-maven-plugin:4.0-RC2:test-compile (default-test-compile) @ testClient ---
+[INFO] Flexmojos 4.0-RC2
+[INFO] 	 Apache License - Version 2.0 (NO WARRANTY) - See COPYRIGHT file
+[WARNING] Skipping compiler, test source path doesn't exist.
+[INFO] 
+[INFO] --- flexmojos-maven-plugin:4.0-RC2:test-run (default-test-run) @ testClient ---
+[INFO] Flexmojos 4.0-RC2
+[INFO] 	 Apache License - Version 2.0 (NO WARRANTY) - See COPYRIGHT file
+[WARNING] Skipping test run. Runner not found: /var/lib/jenkins/jobs/task-5/workspace/testClient/target/test-classes
+[JENKINS] Recording test results
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ testClient ---
+[INFO] Installing /var/lib/jenkins/jobs/task-5/workspace/testClient/target/testClient-1.0.0.swf to /var/lib/jenkins/.m2/repository/org/justinjmoses/flexmojos-introduction/testClient/1.0.0/testClient-1.0.0.swf
+[INFO] Installing /var/lib/jenkins/jobs/task-5/workspace/testClient/pom.xml to /var/lib/jenkins/.m2/repository/org/justinjmoses/flexmojos-introduction/testClient/1.0.0/testClient-1.0.0.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.344 s
+[INFO] Finished at: 2015-05-27T10:34:23+03:00
+[INFO] Final Memory: 20M/203M
+[INFO] ------------------------------------------------------------------------
+[JENKINS] Archiving /var/lib/jenkins/jobs/task-5/workspace/testClient/pom.xml to org.justinjmoses.flexmojos-introduction/testClient/1.0.0/testClient-1.0.0.pom
+[JENKINS] Archiving /var/lib/jenkins/jobs/task-5/workspace/testClient/target/testClient-1.0.0.swf to org.justinjmoses.flexmojos-introduction/testClient/1.0.0/testClient-1.0.0.swf
+channel stopped
+Finished: SUCCESS

@@ -1,0 +1,672 @@
+Started by user anonymous
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/lib/jenkins/jobs/7-Profiles/workspace
+ > /usr/bin/git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > /usr/bin/git config remote.origin.url https://github.com/justinjmoses/flexmojos-introduction.git # timeout=10
+Fetching upstream changes from https://github.com/justinjmoses/flexmojos-introduction.git
+ > /usr/bin/git --version # timeout=10
+ > /usr/bin/git fetch --tags --progress https://github.com/justinjmoses/flexmojos-introduction.git +refs/heads/*:refs/remotes/origin/*
+ > /usr/bin/git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 31ec449db0fefe2f1d8fa955f3f43e5796a14f45 (refs/remotes/origin/master)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f 31ec449db0fefe2f1d8fa955f3f43e5796a14f45
+ > /usr/bin/git rev-list 31ec449db0fefe2f1d8fa955f3f43e5796a14f45 # timeout=10
+[EnvInject] - Executing scripts and injecting environment variables after the SCM step.
+[EnvInject] - Injecting as environment variables the properties content 
+FLASH_PLAYER=/usr/local/bin/flashplayer
+
+[EnvInject] - Variables injected successfully.
+[workspace] $ /bin/sh -xe /tmp/hudson76286508474276878.sh
++ cd /var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/libs/
++ mvn install:install-file -Dfile=as3-signals-0.8.swc -DgroupId=org.osflash -DartifactId=as3-signals -Dversion=0.8 -Dpackaging=swc
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install-file (default-cli) @ standalone-pom ---
+[INFO] Installing /var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/libs/as3-signals-0.8.swc to /var/lib/jenkins/.m2/repository/org/osflash/as3-signals/0.8/as3-signals-0.8.swc
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.369 s
+[INFO] Finished at: 2015-05-26T18:01:18+03:00
+[INFO] Final Memory: 6M/53M
+[INFO] ------------------------------------------------------------------------
++ export
+export BUILD_CAUSE="MANUALTRIGGER"
+export BUILD_CAUSE_MANUALTRIGGER="true"
+export BUILD_DISPLAY_NAME="#12"
+export BUILD_ID="12"
+export BUILD_NUMBER="12"
+export BUILD_TAG="jenkins-7-Profiles-12"
+export BUILD_URL="http://jenkins/job/7-Profiles/12/"
+export EXECUTOR_NUMBER="1"
+export FLASH_PLAYER="/usr/local/bin/flashplayer"
+export GIT_BRANCH="origin/master"
+export GIT_COMMIT="31ec449db0fefe2f1d8fa955f3f43e5796a14f45"
+export GIT_PREVIOUS_COMMIT="31ec449db0fefe2f1d8fa955f3f43e5796a14f45"
+export GIT_PREVIOUS_SUCCESSFUL_COMMIT="31ec449db0fefe2f1d8fa955f3f43e5796a14f45"
+export GIT_URL="https://github.com/justinjmoses/flexmojos-introduction.git"
+export HOME="/var/lib/jenkins"
+export HUDSON_COOKIE="4705c812-2e98-4c58-9b32-88f2fcc3eb1f"
+export HUDSON_HOME="/var/lib/jenkins"
+export HUDSON_SERVER_COOKIE="357b1bfdf090f585"
+export HUDSON_URL="http://jenkins/"
+export JAVA_HOME="/usr/java/jdk1.7.0_79"
+export JENKINS_HOME="/var/lib/jenkins"
+export JENKINS_SERVER_COOKIE="357b1bfdf090f585"
+export JENKINS_URL="http://jenkins/"
+export JOB_NAME="7-Profiles"
+export JOB_URL="http://jenkins/job/7-Profiles/"
+export LANG="en_US.UTF-8"
+export LOGNAME="jenkins"
+export M2_HOME="/opt/maven/"
+export MAVEN_HOME="/opt/maven/"
+export NLSPATH="/usr/dt/lib/nls/msg/%L/%N.cat"
+export NODE_LABELS="master"
+export NODE_NAME="master"
+export OLDPWD="/var/lib/jenkins/jobs/7-Profiles/workspace"
+export PATH="/opt/maven//bin:/usr/java/jdk1.7.0_79/bin:/sbin:/usr/sbin:/bin:/usr/bin"
+export POM_ARTIFACTID="parent"
+export POM_DISPLAYNAME="Flexmojos Libraries Example"
+export POM_GROUPID="org.justinjmoses.flexmojos-introduction.profile-example"
+export POM_PACKAGING="pom"
+export POM_VERSION="1.0.0-SNAPSHOT"
+export PWD="/var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/libs"
+export ROOT_BUILD_CAUSE="MANUALTRIGGER"
+export ROOT_BUILD_CAUSE_MANUALTRIGGER="true"
+export SHELL="/bin/bash"
+export SHLVL="4"
+export TERM="xterm"
+export USER="jenkins"
+export WORKSPACE="/var/lib/jenkins/jobs/7-Profiles/workspace"
+export XFILESEARCHPATH="/usr/dt/app-defaults/%L/Dt"
+Parsing POMs
+Modules changed, recalculating dependency graph
+[7-Profiles] $ /usr/java/jdk1.7.0_79/bin/java -cp /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven32-agent-1.6.jar:/opt/maven/boot/plexus-classworlds-2.5.2.jar:/opt/maven/conf/logging jenkins.maven3.agent.Maven32Main /opt/maven/ /var/cache/jenkins/war/WEB-INF/lib/remoting-2.51.jar /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven32-interceptor-1.6.jar /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.6.jar 37359
+<===[JENKINS REMOTING CAPACITY]===>channel started
+Executing Maven:  -B -f /var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/pom.xml clean install -P flex4.1
+[INFO] Scanning for projects...
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/4.1.0.16076/compiler-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/4.1.0.16076/compiler-4.1.0.16076.pom (10 KB at 10.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/adt/4.1.0.16076/adt-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/adt/4.1.0.16076/adt-4.1.0.16076.pom (405 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/afe/4.1.0.16076/afe-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/afe/4.1.0.16076/afe-4.1.0.16076.pom (405 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/aglj40/4.1.0.16076/aglj40-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/aglj40/4.1.0.16076/aglj40-4.1.0.16076.pom (408 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/asc/4.1.0.16076/asc-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/asc/4.1.0.16076/asc-4.1.0.16076.pom (405 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/asdoc/4.1.0.16076/asdoc-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/asdoc/4.1.0.16076/asdoc-4.1.0.16076.pom (407 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik-all-flex/4.1.0.16076/batik-all-flex-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik-all-flex/4.1.0.16076/batik-all-flex-4.1.0.16076.pom (416 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik_de/4.1.0.16076/batik_de-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik_de/4.1.0.16076/batik_de-4.1.0.16076.pom (410 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik_fr/4.1.0.16076/batik_fr-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik_fr/4.1.0.16076/batik_fr-4.1.0.16076.pom (410 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik_ja/4.1.0.16076/batik_ja-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik_ja/4.1.0.16076/batik_ja-4.1.0.16076.pom (410 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik_ko/4.1.0.16076/batik_ko-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik_ko/4.1.0.16076/batik_ko-4.1.0.16076.pom (410 B at 1.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik_ru/4.1.0.16076/batik_ru-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik_ru/4.1.0.16076/batik_ru-4.1.0.16076.pom (410 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik_zh_CN/4.1.0.16076/batik_zh_CN-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik_zh_CN/4.1.0.16076/batik_zh_CN-4.1.0.16076.pom (413 B at 0.8 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/commons-collections/4.1.0.16076/commons-collections-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/commons-collections/4.1.0.16076/commons-collections-4.1.0.16076.pom (421 B at 0.8 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/commons-discovery/4.1.0.16076/commons-discovery-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/commons-discovery/4.1.0.16076/commons-discovery-4.1.0.16076.pom (419 B at 0.8 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/commons-logging/4.1.0.16076/commons-logging-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/commons-logging/4.1.0.16076/commons-logging-4.1.0.16076.pom (417 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/compc/4.1.0.16076/compc-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/compc/4.1.0.16076/compc-4.1.0.16076.pom (407 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/copylocale/4.1.0.16076/copylocale-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/copylocale/4.1.0.16076/copylocale-4.1.0.16076.pom (412 B at 0.8 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/digest/4.1.0.16076/digest-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/digest/4.1.0.16076/digest-4.1.0.16076.pom (408 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/fcsh/4.1.0.16076/fcsh-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/fcsh/4.1.0.16076/fcsh-4.1.0.16076.pom (406 B at 0.8 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/fdb/4.1.0.16076/fdb-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/fdb/4.1.0.16076/fdb-4.1.0.16076.pom (405 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/flex-compiler-oem/4.1.0.16076/flex-compiler-oem-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/flex-compiler-oem/4.1.0.16076/flex-compiler-oem-4.1.0.16076.pom (419 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/flex-fontkit/4.1.0.16076/flex-fontkit-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/flex-fontkit/4.1.0.16076/flex-fontkit-4.1.0.16076.pom (414 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/flex-messaging-common/4.1.0.16076/flex-messaging-common-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/flex-messaging-common/4.1.0.16076/flex-messaging-common-4.1.0.16076.pom (423 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/fxgutils/4.1.0.16076/fxgutils-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/fxgutils/4.1.0.16076/fxgutils-4.1.0.16076.pom (410 B at 1.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/license/4.1.0.16076/license-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/license/4.1.0.16076/license-4.1.0.16076.pom (409 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc/4.1.0.16076/mxmlc-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc/4.1.0.16076/mxmlc-4.1.0.16076.pom (407 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_da/4.1.0.16076/mxmlc_da-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_da/4.1.0.16076/mxmlc_da-4.1.0.16076.pom (410 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_de/4.1.0.16076/mxmlc_de-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_de/4.1.0.16076/mxmlc_de-4.1.0.16076.pom (410 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_es/4.1.0.16076/mxmlc_es-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_es/4.1.0.16076/mxmlc_es-4.1.0.16076.pom (410 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_fi/4.1.0.16076/mxmlc_fi-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_fi/4.1.0.16076/mxmlc_fi-4.1.0.16076.pom (410 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_fr/4.1.0.16076/mxmlc_fr-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_fr/4.1.0.16076/mxmlc_fr-4.1.0.16076.pom (410 B at 0.8 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_it/4.1.0.16076/mxmlc_it-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_it/4.1.0.16076/mxmlc_it-4.1.0.16076.pom (410 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_ja/4.1.0.16076/mxmlc_ja-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_ja/4.1.0.16076/mxmlc_ja-4.1.0.16076.pom (410 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_ko/4.1.0.16076/mxmlc_ko-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_ko/4.1.0.16076/mxmlc_ko-4.1.0.16076.pom (410 B at 1.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_nb/4.1.0.16076/mxmlc_nb-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_nb/4.1.0.16076/mxmlc_nb-4.1.0.16076.pom (410 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_nl/4.1.0.16076/mxmlc_nl-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_nl/4.1.0.16076/mxmlc_nl-4.1.0.16076.pom (410 B at 1.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_pt/4.1.0.16076/mxmlc_pt-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_pt/4.1.0.16076/mxmlc_pt-4.1.0.16076.pom (410 B at 1.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_ru/4.1.0.16076/mxmlc_ru-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_ru/4.1.0.16076/mxmlc_ru-4.1.0.16076.pom (410 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_sv/4.1.0.16076/mxmlc_sv-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_sv/4.1.0.16076/mxmlc_sv-4.1.0.16076.pom (410 B at 1.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_zh_CN/4.1.0.16076/mxmlc_zh_CN-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_zh_CN/4.1.0.16076/mxmlc_zh_CN-4.1.0.16076.pom (413 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_zh_TW/4.1.0.16076/mxmlc_zh_TW-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_zh_TW/4.1.0.16076/mxmlc_zh_TW-4.1.0.16076.pom (413 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/optimizer/4.1.0.16076/optimizer-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/optimizer/4.1.0.16076/optimizer-4.1.0.16076.pom (411 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/rideau/4.1.0.16076/rideau-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/rideau/4.1.0.16076/rideau-4.1.0.16076.pom (408 B at 0.8 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/saxon9/4.1.0.16076/saxon9-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/saxon9/4.1.0.16076/saxon9-4.1.0.16076.pom (408 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/swcdepends/4.1.0.16076/swcdepends-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/swcdepends/4.1.0.16076/swcdepends-4.1.0.16076.pom (412 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/swfdump/4.1.0.16076/swfdump-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/swfdump/4.1.0.16076/swfdump-4.1.0.16076.pom (409 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/swfutils/4.1.0.16076/swfutils-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/swfutils/4.1.0.16076/swfutils-4.1.0.16076.pom (410 B at 0.8 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/velocity-dep-1.4-flex/4.1.0.16076/velocity-dep-1.4-flex-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/velocity-dep-1.4-flex/4.1.0.16076/velocity-dep-1.4-flex-4.1.0.16076.pom (423 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xalan/4.1.0.16076/xalan-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xalan/4.1.0.16076/xalan-4.1.0.16076.pom (407 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl/4.1.0.16076/xercesImpl-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl/4.1.0.16076/xercesImpl-4.1.0.16076.pom (412 B at 0.7 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl_de/4.1.0.16076/xercesImpl_de-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl_de/4.1.0.16076/xercesImpl_de-4.1.0.16076.pom (415 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl_fr/4.1.0.16076/xercesImpl_fr-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl_fr/4.1.0.16076/xercesImpl_fr-4.1.0.16076.pom (415 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl_ja/4.1.0.16076/xercesImpl_ja-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl_ja/4.1.0.16076/xercesImpl_ja-4.1.0.16076.pom (415 B at 0.8 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl_ko/4.1.0.16076/xercesImpl_ko-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl_ko/4.1.0.16076/xercesImpl_ko-4.1.0.16076.pom (415 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl_ru/4.1.0.16076/xercesImpl_ru-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl_ru/4.1.0.16076/xercesImpl_ru-4.1.0.16076.pom (415 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl_zh_CN/4.1.0.16076/xercesImpl_zh_CN-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl_zh_CN/4.1.0.16076/xercesImpl_zh_CN-4.1.0.16076.pom (418 B at 1.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesPatch/4.1.0.16076/xercesPatch-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesPatch/4.1.0.16076/xercesPatch-4.1.0.16076.pom (413 B at 1.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xmlParserAPIs/4.1.0.16076/xmlParserAPIs-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xmlParserAPIs/4.1.0.16076/xmlParserAPIs-4.1.0.16076.pom (415 B at 0.9 KB/sec)
+
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/adt/4.1.0.16076/adt-4.1.0.16076.jar
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/afe/4.1.0.16076/afe-4.1.0.16076.jar
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/asc/4.1.0.16076/asc-4.1.0.16076.jar
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/aglj40/4.1.0.16076/aglj40-4.1.0.16076.jar
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/asdoc/4.1.0.16076/asdoc-4.1.0.16076.jar
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/asdoc/4.1.0.16076/asdoc-4.1.0.16076.jar (648 B at 1.1 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik-all-flex/4.1.0.16076/batik-all-flex-4.1.0.16076.jar
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/asc/4.1.0.16076/asc-4.1.0.16076.jar (1237 KB at 263.7 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik_de/4.1.0.16076/batik_de-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik_de/4.1.0.16076/batik_de-4.1.0.16076.jar (25 KB at 4.7 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik_fr/4.1.0.16076/batik_fr-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik_fr/4.1.0.16076/batik_fr-4.1.0.16076.jar (25 KB at 4.5 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik_ja/4.1.0.16076/batik_ja-4.1.0.16076.jar
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik_ja/4.1.0.16076/batik_ja-4.1.0.16076.jar (26 KB at 4.3 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik_ko/4.1.0.16076/batik_ko-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik_ko/4.1.0.16076/batik_ko-4.1.0.16076.jar (26 KB at 4.1 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik_ru/4.1.0.16076/batik_ru-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/adt/4.1.0.16076/adt-4.1.0.16076.jar (2832 KB at 439.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik_zh_CN/4.1.0.16076/batik_zh_CN-4.1.0.16076.jar
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik_ru/4.1.0.16076/batik_ru-4.1.0.16076.jar (27 KB at 4.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/commons-collections/4.1.0.16076/commons-collections-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik_zh_CN/4.1.0.16076/batik_zh_CN-4.1.0.16076.jar (25 KB at 3.6 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/commons-discovery/4.1.0.16076/commons-discovery-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/commons-discovery/4.1.0.16076/commons-discovery-4.1.0.16076.jar (70 KB at 9.4 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/commons-logging/4.1.0.16076/commons-logging-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/commons-collections/4.1.0.16076/commons-collections-4.1.0.16076.jar (292 KB at 38.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/compc/4.1.0.16076/compc-4.1.0.16076.jar
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/commons-logging/4.1.0.16076/commons-logging-4.1.0.16076.jar (38 KB at 4.7 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/copylocale/4.1.0.16076/copylocale-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/compc/4.1.0.16076/compc-4.1.0.16076.jar (649 B at 0.1 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/digest/4.1.0.16076/digest-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/copylocale/4.1.0.16076/copylocale-4.1.0.16076.jar (4 KB at 0.5 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/fcsh/4.1.0.16076/fcsh-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/fcsh/4.1.0.16076/fcsh-4.1.0.16076.jar (29 KB at 3.3 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/fdb/4.1.0.16076/fdb-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/digest/4.1.0.16076/digest-4.1.0.16076.jar (18 KB at 2.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/flex-compiler-oem/4.1.0.16076/flex-compiler-oem-4.1.0.16076.jar
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/afe/4.1.0.16076/afe-4.1.0.16076.jar (1337 KB at 147.2 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/flex-fontkit/4.1.0.16076/flex-fontkit-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/flex-fontkit/4.1.0.16076/flex-fontkit-4.1.0.16076.jar (55 KB at 5.8 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/flex-messaging-common/4.1.0.16076/flex-messaging-common-4.1.0.16076.jar
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/fdb/4.1.0.16076/fdb-4.1.0.16076.jar (538 KB at 53.2 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/fxgutils/4.1.0.16076/fxgutils-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/flex-messaging-common/4.1.0.16076/flex-messaging-common-4.1.0.16076.jar (94 KB at 9.3 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/license/4.1.0.16076/license-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/license/4.1.0.16076/license-4.1.0.16076.jar (17 KB at 1.5 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc/4.1.0.16076/mxmlc-4.1.0.16076.jar
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/fxgutils/4.1.0.16076/fxgutils-4.1.0.16076.jar (257 KB at 23.2 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_da/4.1.0.16076/mxmlc_da-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_da/4.1.0.16076/mxmlc_da-4.1.0.16076.jar (30 KB at 2.6 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_de/4.1.0.16076/mxmlc_de-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_de/4.1.0.16076/mxmlc_de-4.1.0.16076.jar (32 KB at 2.6 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_es/4.1.0.16076/mxmlc_es-4.1.0.16076.jar
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/flex-compiler-oem/4.1.0.16076/flex-compiler-oem-4.1.0.16076.jar (128 KB at 10.7 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_fi/4.1.0.16076/mxmlc_fi-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_es/4.1.0.16076/mxmlc_es-4.1.0.16076.jar (31 KB at 2.5 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_fr/4.1.0.16076/mxmlc_fr-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_fr/4.1.0.16076/mxmlc_fr-4.1.0.16076.jar (32 KB at 2.5 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_it/4.1.0.16076/mxmlc_it-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_fi/4.1.0.16076/mxmlc_fi-4.1.0.16076.jar (31 KB at 2.4 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_ja/4.1.0.16076/mxmlc_ja-4.1.0.16076.jar
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_it/4.1.0.16076/mxmlc_it-4.1.0.16076.jar (32 KB at 2.4 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_ko/4.1.0.16076/mxmlc_ko-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_ko/4.1.0.16076/mxmlc_ko-4.1.0.16076.jar (34 KB at 2.5 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_nb/4.1.0.16076/mxmlc_nb-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_ja/4.1.0.16076/mxmlc_ja-4.1.0.16076.jar (36 KB at 2.6 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_nl/4.1.0.16076/mxmlc_nl-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_nb/4.1.0.16076/mxmlc_nb-4.1.0.16076.jar (29 KB at 2.1 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_pt/4.1.0.16076/mxmlc_pt-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc/4.1.0.16076/mxmlc-4.1.0.16076.jar (2001 KB at 143.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_ru/4.1.0.16076/mxmlc_ru-4.1.0.16076.jar
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_pt/4.1.0.16076/mxmlc_pt-4.1.0.16076.jar (31 KB at 2.1 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_sv/4.1.0.16076/mxmlc_sv-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_ru/4.1.0.16076/mxmlc_ru-4.1.0.16076.jar (42 KB at 2.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_zh_CN/4.1.0.16076/mxmlc_zh_CN-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_nl/4.1.0.16076/mxmlc_nl-4.1.0.16076.jar (30 KB at 2.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_zh_TW/4.1.0.16076/mxmlc_zh_TW-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/aglj40/4.1.0.16076/aglj40-4.1.0.16076.jar (8294 KB at 561.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/optimizer/4.1.0.16076/optimizer-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_sv/4.1.0.16076/mxmlc_sv-4.1.0.16076.jar (30 KB at 2.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/rideau/4.1.0.16076/rideau-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_zh_CN/4.1.0.16076/mxmlc_zh_CN-4.1.0.16076.jar (32 KB at 2.1 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/saxon9/4.1.0.16076/saxon9-4.1.0.16076.jar
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/optimizer/4.1.0.16076/optimizer-4.1.0.16076.jar (7 KB at 0.4 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/swcdepends/4.1.0.16076/swcdepends-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/swcdepends/4.1.0.16076/swcdepends-4.1.0.16076.jar (9 KB at 0.6 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/swfdump/4.1.0.16076/swfdump-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/mxmlc_zh_TW/4.1.0.16076/mxmlc_zh_TW-4.1.0.16076.jar (33 KB at 2.1 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/swfutils/4.1.0.16076/swfutils-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/swfdump/4.1.0.16076/swfdump-4.1.0.16076.jar (476 B at 0.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/velocity-dep-1.4-flex/4.1.0.16076/velocity-dep-1.4-flex-4.1.0.16076.jar
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/rideau/4.1.0.16076/rideau-4.1.0.16076.jar (70 KB at 4.3 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xalan/4.1.0.16076/xalan-4.1.0.16076.jar
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/velocity-dep-1.4-flex/4.1.0.16076/velocity-dep-1.4-flex-4.1.0.16076.jar (506 KB at 29.2 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl/4.1.0.16076/xercesImpl-4.1.0.16076.jar
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/swfutils/4.1.0.16076/swfutils-4.1.0.16076.jar (452 KB at 22.4 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl_de/4.1.0.16076/xercesImpl_de-4.1.0.16076.jar
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl_de/4.1.0.16076/xercesImpl_de-4.1.0.16076.jar (28 KB at 1.3 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl_fr/4.1.0.16076/xercesImpl_fr-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl/4.1.0.16076/xercesImpl-4.1.0.16076.jar (1201 KB at 57.7 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl_ja/4.1.0.16076/xercesImpl_ja-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl_fr/4.1.0.16076/xercesImpl_fr-4.1.0.16076.jar (28 KB at 1.3 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl_ko/4.1.0.16076/xercesImpl_ko-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl_ja/4.1.0.16076/xercesImpl_ja-4.1.0.16076.jar (29 KB at 1.4 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl_ru/4.1.0.16076/xercesImpl_ru-4.1.0.16076.jar
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl_ko/4.1.0.16076/xercesImpl_ko-4.1.0.16076.jar (29 KB at 1.3 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl_zh_CN/4.1.0.16076/xercesImpl_zh_CN-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl_ru/4.1.0.16076/xercesImpl_ru-4.1.0.16076.jar (31 KB at 1.4 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesPatch/4.1.0.16076/xercesPatch-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesImpl_zh_CN/4.1.0.16076/xercesImpl_zh_CN-4.1.0.16076.jar (29 KB at 1.3 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xmlParserAPIs/4.1.0.16076/xmlParserAPIs-4.1.0.16076.jar
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/batik-all-flex/4.1.0.16076/batik-all-flex-4.1.0.16076.jar (3260 KB at 149.6 KB/sec)
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xercesPatch/4.1.0.16076/xercesPatch-4.1.0.16076.jar (74 KB at 3.3 KB/sec)
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xmlParserAPIs/4.1.0.16076/xmlParserAPIs-4.1.0.16076.jar (190 KB at 8.4 KB/sec)
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/xalan/4.1.0.16076/xalan-4.1.0.16076.jar (3076 KB at 94.0 KB/sec)
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/compiler/saxon9/4.1.0.16076/saxon9-4.1.0.16076.jar (4907 KB at 148.6 KB/sec)
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Flexmojos Libraries Example
+[INFO] Flexmojos Libraries Example - SWC Library
+[INFO] Flexmojos Libraries Example - Application
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Flexmojos Libraries Example 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ parent ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ parent ---
+[INFO] Installing /var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/pom.xml to /var/lib/jenkins/.m2/repository/org/justinjmoses/flexmojos-introduction/profile-example/parent/1.0.0-SNAPSHOT/parent-1.0.0-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Flexmojos Libraries Example - SWC Library 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/flex-framework/4.1.0.16076/flex-framework-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/flex-framework/4.1.0.16076/flex-framework-4.1.0.16076.pom (2 KB at 1.7 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/common-framework/4.1.0.16076/common-framework-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/common-framework/4.1.0.16076/common-framework-4.1.0.16076.pom (4 KB at 5.8 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/datavisualization/4.1.0.16076/datavisualization-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/datavisualization/4.1.0.16076/datavisualization-4.1.0.16076.pom (449 B at 1.1 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/flash-integration/4.1.0.16076/flash-integration-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/flash-integration/4.1.0.16076/flash-integration-4.1.0.16076.pom (449 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/flex/4.1.0.16076/flex-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/flex/4.1.0.16076/flex-4.1.0.16076.pom (0 B at 0.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/framework/4.1.0.16076/framework-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/framework/4.1.0.16076/framework-4.1.0.16076.pom (441 B at 1.1 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/osmf/4.1.0.16076/osmf-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/osmf/4.1.0.16076/osmf-4.1.0.16076.pom (436 B at 0.8 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/rpc/4.1.0.16076/rpc-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/rpc/4.1.0.16076/rpc-4.1.0.16076.pom (435 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/spark/4.1.0.16076/spark-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/spark/4.1.0.16076/spark-4.1.0.16076.pom (437 B at 1.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/sparkskins/4.1.0.16076/sparkskins-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/sparkskins/4.1.0.16076/sparkskins-4.1.0.16076.pom (442 B at 1.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/textLayout/4.1.0.16076/textLayout-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/textLayout/4.1.0.16076/textLayout-4.1.0.16076.pom (442 B at 1.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/utilities/4.1.0.16076/utilities-4.1.0.16076.pom
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/utilities/4.1.0.16076/utilities-4.1.0.16076.pom (441 B at 0.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/playerglobal/4.1.0.16076/playerglobal-4.1.0.16076.pom
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/playerglobal/4.1.0.16076/playerglobal-4.1.0.16076.pom (0 B at 0.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/datavisualization/4.1.0.16076/datavisualization-4.1.0.16076.swc
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/flash-integration/4.1.0.16076/flash-integration-4.1.0.16076.swc
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/flex/4.1.0.16076/flex-4.1.0.16076.swc
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/framework/4.1.0.16076/framework-4.1.0.16076.swc
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/osmf/4.1.0.16076/osmf-4.1.0.16076.swc
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/flex/4.1.0.16076/flex-4.1.0.16076.swc (0 B at 0.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/rpc/4.1.0.16076/rpc-4.1.0.16076.swc
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/flash-integration/4.1.0.16076/flash-integration-4.1.0.16076.swc (102 KB at 80.5 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/spark/4.1.0.16076/spark-4.1.0.16076.swc
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/osmf/4.1.0.16076/osmf-4.1.0.16076.swc (242 KB at 141.2 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/sparkskins/4.1.0.16076/sparkskins-4.1.0.16076.swc
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/sparkskins/4.1.0.16076/sparkskins-4.1.0.16076.swc (120 KB at 52.5 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/textLayout/4.1.0.16076/textLayout-4.1.0.16076.swc
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/rpc/4.1.0.16076/rpc-4.1.0.16076.swc (306 KB at 119.4 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/utilities/4.1.0.16076/utilities-4.1.0.16076.swc
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/utilities/4.1.0.16076/utilities-4.1.0.16076.swc (22 KB at 7.2 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/framework/4.1.0.16076/framework-4.1.0.16076-configs.zip
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/textLayout/4.1.0.16076/textLayout-4.1.0.16076.swc (385 KB at 119.4 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/datavisualization/4.1.0.16076/datavisualization-4.1.0.16076.rb.swc
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/spark/4.1.0.16076/spark-4.1.0.16076.swc (829 KB at 231.8 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/framework/4.1.0.16076/framework-4.1.0.16076.rb.swc
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/datavisualization/4.1.0.16076/datavisualization-4.1.0.16076.rb.swc (22 B at 0.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/osmf/4.1.0.16076/osmf-4.1.0.16076.rb.swc
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/framework/4.1.0.16076/framework-4.1.0.16076-configs.zip (104 KB at 28.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/rpc/4.1.0.16076/rpc-4.1.0.16076.rb.swc
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/framework/4.1.0.16076/framework-4.1.0.16076.rb.swc (22 B at 0.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/spark/4.1.0.16076/spark-4.1.0.16076.rb.swc
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/osmf/4.1.0.16076/osmf-4.1.0.16076.rb.swc (22 B at 0.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/textLayout/4.1.0.16076/textLayout-4.1.0.16076.rb.swc
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/rpc/4.1.0.16076/rpc-4.1.0.16076.rb.swc (22 B at 0.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/flash-integration/4.1.0.16076/flash-integration-4.1.0.16076.rb.swc
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/spark/4.1.0.16076/spark-4.1.0.16076.rb.swc (22 B at 0.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/playerglobal/4.1.0.16076/playerglobal-4.1.0.16076-10.0.swc
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/textLayout/4.1.0.16076/textLayout-4.1.0.16076.rb.swc (22 B at 0.0 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/playerglobal/4.1.0.16076/playerglobal-4.1.0.16076.rb.swc
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/flash-integration/4.1.0.16076/flash-integration-4.1.0.16076.rb.swc (22 B at 0.0 KB/sec)
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/playerglobal/4.1.0.16076/playerglobal-4.1.0.16076-10.0.swc (0 B at 0.0 KB/sec)
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/playerglobal/4.1.0.16076/playerglobal-4.1.0.16076.rb.swc (22 B at 0.0 KB/sec)
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/datavisualization/4.1.0.16076/datavisualization-4.1.0.16076.swc (989 KB at 202.0 KB/sec)
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/framework/4.1.0.16076/framework-4.1.0.16076.swc (1747 KB at 194.0 KB/sec)
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ library ---
+[INFO] Deleting /var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/library/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ library ---
+
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/library/src/main/resources
+[INFO] 
+[INFO] --- flexmojos-maven-plugin:4.0-RC2:compile-swc (default-compile-swc) @ library ---
+[INFO] Flexmojos 4.0-RC2
+[INFO] 	 Apache License - Version 2.0 (NO WARRANTY) - See COPYRIGHT file
+[WARNING] No themes are explicitly defined in the <theme> section or in any scope="theme" dependencies. Flexmojos is now attempting to figure out which themes to include. (to avoid this warning you should explicitly state your theme dependencies)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/spark/4.1.0.16076/spark-4.1.0.16076-theme.css
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/spark/4.1.0.16076/spark-4.1.0.16076-theme.css (153 B at 0.4 KB/sec)
+[WARNING] Adding spark.css theme because spark.swc was included as a dependency
+Writing configuration dump to /var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/library/target/library-1.0.0-SNAPSHOT-configs.xml
+
+/var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/library/src/main/flex/org/justinjmoses/flexmojos_intro/RandomCity.as(3): col: 15 Warning: No constructor function was specified for class RandomCity.
+
+	public class RandomCity
+	             ^
+
+/var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/library/target/library-1.0.0-SNAPSHOT.swc (2319 bytes)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ library ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/library/src/test/resources
+[INFO] 
+[INFO] --- flexmojos-maven-plugin:4.0-RC2:test-compile (default-test-compile) @ library ---
+[INFO] Flexmojos 4.0-RC2
+[INFO] 	 Apache License - Version 2.0 (NO WARRANTY) - See COPYRIGHT file
+[INFO] Compiling test class: [org.justinjmoses.flexmojos_intro.TestRandomCity]
+[WARNING] No themes are explicitly defined in the <theme> section or in any scope="theme" dependencies. Flexmojos is now attempting to figure out which themes to include. (to avoid this warning you should explicitly state your theme dependencies)
+[WARNING] Adding spark.css theme because spark.swc was included as a dependency
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/datavisualization/4.1.0.16076/datavisualization-4.1.0.16076-en_US.rb.swc
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/datavisualization/4.1.0.16076/datavisualization-4.1.0.16076-en_US.rb.swc (294 KB at 126.7 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/framework/4.1.0.16076/framework-4.1.0.16076-en_US.rb.swc
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/framework/4.1.0.16076/framework-4.1.0.16076-en_US.rb.swc (796 KB at 174.1 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/osmf/4.1.0.16076/osmf-4.1.0.16076-en_US.rb.swc
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/osmf/4.1.0.16076/osmf-4.1.0.16076-en_US.rb.swc (9 KB at 23.4 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/rpc/4.1.0.16076/rpc-4.1.0.16076-en_US.rb.swc
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/rpc/4.1.0.16076/rpc-4.1.0.16076-en_US.rb.swc (120 KB at 153.4 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/spark/4.1.0.16076/spark-4.1.0.16076-en_US.rb.swc
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/spark/4.1.0.16076/spark-4.1.0.16076-en_US.rb.swc (285 KB at 192.8 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/textLayout/4.1.0.16076/textLayout-4.1.0.16076-en_US.rb.swc
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/textLayout/4.1.0.16076/textLayout-4.1.0.16076-en_US.rb.swc (157 KB at 162.9 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/flash-integration/4.1.0.16076/flash-integration-4.1.0.16076-en_US.rb.swc
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/flash-integration/4.1.0.16076/flash-integration-4.1.0.16076-en_US.rb.swc (21 KB at 51.7 KB/sec)
+[INFO] Downloading: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/playerglobal/4.1.0.16076/playerglobal-4.1.0.16076-en_US.rb.swc
+
+[INFO] Downloaded: http://repository.sonatype.org/content/groups/flexgroup/com/adobe/flex/framework/playerglobal/4.1.0.16076/playerglobal-4.1.0.16076-en_US.rb.swc (1033 KB at 361.9 KB/sec)
+Writing configuration dump to /var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/library/target/test-classes/TestRunner-configs.xml
+
+/var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/library/src/test/flex/org/justinjmoses/flexmojos_intro/TestRandomCity.as(3): col: 15 Warning: No constructor function was specified for class TestRandomCity.
+
+	public class TestRandomCity
+	             ^
+
+/var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/library/src/main/flex/org/justinjmoses/flexmojos_intro/RandomCity.as(3): col: 15 Warning: No constructor function was specified for class RandomCity.
+
+	public class RandomCity
+	             ^
+
+/var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/library/target/test-classes/TestRunner.swf (844116 bytes)
+[INFO] 
+[INFO] --- flexmojos-maven-plugin:4.0-RC2:test-run (default-test-run) @ library ---
+[INFO] Flexmojos 4.0-RC2
+[INFO] 	 Apache License - Version 2.0 (NO WARRANTY) - See COPYRIGHT file
+[INFO] Instrumenting: /var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/library/target/test-classes/TestRunner.swf
+
+[WARNING] 7z is not present on PATH. Fallback to normal compression.
+[INFO] Running tests /var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/library/target/test-classes/TestRunner.swf
+[WARNING] [LAUNCHER] Using xvfb-run to launch headless tests
+[ERROR] Failed to delete Xvfb locking files, does the current user has access?
+java.io.IOException: File /tmp/.X11-unix/X0 unable to be deleted.
+	at org.codehaus.plexus.util.FileUtils.forceDelete(FileUtils.java:1373)
+	at org.codehaus.plexus.util.FileUtils.cleanDirectory(FileUtils.java:1625)
+	at org.codehaus.plexus.util.FileUtils.deleteDirectory(FileUtils.java:1570)
+	at org.codehaus.plexus.util.FileUtils.forceDelete(FileUtils.java:1361)
+	at org.codehaus.plexus.util.FileUtils.forceDelete(FileUtils.java:1347)
+	at org.sonatype.flexmojos.test.launcher.AsVmLauncher.runFlashplayerHeadless(AsVmLauncher.java:201)
+	at org.sonatype.flexmojos.test.launcher.AsVmLauncher.start(AsVmLauncher.java:288)
+	at org.sonatype.flexmojos.test.DefaultTestRunner.run(DefaultTestRunner.java:55)
+	at org.sonatype.flexmojos.plugin.test.TestRunMojo.runTest(TestRunMojo.java:442)
+	at org.sonatype.flexmojos.plugin.test.TestRunMojo.runTest(TestRunMojo.java:410)
+	at org.sonatype.flexmojos.plugin.test.TestRunMojo.runTests(TestRunMojo.java:465)
+	at org.sonatype.flexmojos.plugin.test.TestRunMojo.run(TestRunMojo.java:352)
+	at org.sonatype.flexmojos.plugin.test.TestRunMojo.execute_aroundBody0(TestRunMojo.java:304)
+	at org.sonatype.flexmojos.plugin.test.TestRunMojo.execute_aroundBody1$advice(TestRunMojo.java:24)
+	at org.sonatype.flexmojos.plugin.test.TestRunMojo.execute_aroundBody2(TestRunMojo.java:291)
+	at org.sonatype.flexmojos.plugin.test.TestRunMojo.execute_aroundBody3$advice(TestRunMojo.java:17)
+	at org.sonatype.flexmojos.plugin.test.TestRunMojo.execute(TestRunMojo.java:1)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.jvnet.hudson.maven3.launcher.Maven32Launcher.main(Maven32Launcher.java:132)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchStandard(Launcher.java:330)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:238)
+	at jenkins.maven3.agent.Maven32Main.launch(Maven32Main.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at hudson.maven.Maven3Builder.call(Maven3Builder.java:136)
+	at hudson.maven.Maven3Builder.call(Maven3Builder.java:71)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:121)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:49)
+	at hudson.remoting.Request$2.run(Request.java:325)
+	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:68)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Cobertura: Saved information on 1 classes.
+[INFO] ------------------------------------------------------------------------
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Time Elapsed: 0 sec
+[JENKINS] Recording test results
+
+log4j:WARN No appenders could be found for logger (org.apache.commons.beanutils.converters.BooleanConverter).
+log4j:WARN Please initialize the log4j system properly.
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ library ---
+[INFO] Installing /var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/library/target/library-1.0.0-SNAPSHOT.swc to /var/lib/jenkins/.m2/repository/org/justinjmoses/flexmojos-introduction/profile-example/library/1.0.0-SNAPSHOT/library-1.0.0-SNAPSHOT.swc
+[INFO] Installing /var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/library/pom.xml to /var/lib/jenkins/.m2/repository/org/justinjmoses/flexmojos-introduction/profile-example/library/1.0.0-SNAPSHOT/library-1.0.0-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Flexmojos Libraries Example - Application 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ application ---
+[INFO] Deleting /var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/application/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ application ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/application/src/main/resources
+[INFO] 
+[INFO] --- flexmojos-maven-plugin:4.0-RC2:compile-swf (default-compile-swf) @ application ---
+[INFO] Flexmojos 4.0-RC2
+[INFO] 	 Apache License - Version 2.0 (NO WARRANTY) - See COPYRIGHT file
+[WARNING] No themes are explicitly defined in the <theme> section or in any scope="theme" dependencies. Flexmojos is now attempting to figure out which themes to include. (to avoid this warning you should explicitly state your theme dependencies)
+[WARNING] Adding spark.css theme because spark.swc was included as a dependency
+Writing configuration dump to /var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/application/target/application-1.0.0-SNAPSHOT-configs.xml
+
+/var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/application/target/application-1.0.0-SNAPSHOT.swf (602018 bytes)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ application ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/application/src/test/resources
+[INFO] 
+[INFO] --- flexmojos-maven-plugin:4.0-RC2:test-compile (default-test-compile) @ application ---
+[INFO] Flexmojos 4.0-RC2
+[INFO] 	 Apache License - Version 2.0 (NO WARRANTY) - See COPYRIGHT file
+[WARNING] Skipping compiler, test source path doesn't exist.
+[INFO] 
+[INFO] --- flexmojos-maven-plugin:4.0-RC2:test-run (default-test-run) @ application ---
+[INFO] Flexmojos 4.0-RC2
+[INFO] 	 Apache License - Version 2.0 (NO WARRANTY) - See COPYRIGHT file
+[WARNING] Skipping test run. Runner not found: /var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/application/target/test-classes
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ application ---
+[INFO] Installing /var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/application/target/application-1.0.0-SNAPSHOT.swf to /var/lib/jenkins/.m2/repository/org/justinjmoses/flexmojos-introduction/profile-example/application/1.0.0-SNAPSHOT/application-1.0.0-SNAPSHOT.swf
+[INFO] Installing /var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/application/pom.xml to /var/lib/jenkins/.m2/repository/org/justinjmoses/flexmojos-introduction/profile-example/application/1.0.0-SNAPSHOT/application-1.0.0-SNAPSHOT.pom
+[JENKINS] Recording test results
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Flexmojos Libraries Example ........................ SUCCESS [  0.689 s]
+[INFO] Flexmojos Libraries Example - SWC Library .......... SUCCESS [ 48.936 s]
+[INFO] Flexmojos Libraries Example - Application .......... SUCCESS [  3.910 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:56 min
+[INFO] Finished at: 2015-05-26T18:03:18+03:00
+[INFO] Final Memory: 20M/185M
+[INFO] ------------------------------------------------------------------------
+[JENKINS] Archiving /var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/application/pom.xml to org.justinjmoses.flexmojos-introduction.profile-example/application/1.0.0-SNAPSHOT/application-1.0.0-SNAPSHOT.pom
+[JENKINS] Archiving /var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/application/target/application-1.0.0-SNAPSHOT.swf to org.justinjmoses.flexmojos-introduction.profile-example/application/1.0.0-SNAPSHOT/application-1.0.0-SNAPSHOT.swf
+[JENKINS] Archiving /var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/library/pom.xml to org.justinjmoses.flexmojos-introduction.profile-example/library/1.0.0-SNAPSHOT/library-1.0.0-SNAPSHOT.pom
+[JENKINS] Archiving /var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/library/target/library-1.0.0-SNAPSHOT.swc to org.justinjmoses.flexmojos-introduction.profile-example/library/1.0.0-SNAPSHOT/library-1.0.0-SNAPSHOT.swc
+[JENKINS] Archiving /var/lib/jenkins/jobs/7-Profiles/workspace/7-Profiles/pom.xml to org.justinjmoses.flexmojos-introduction.profile-example/parent/1.0.0-SNAPSHOT/parent-1.0.0-SNAPSHOT.pom
+channel stopped
+Finished: SUCCESS
+
